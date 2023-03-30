@@ -1,1 +1,7 @@
-# trabalho-projeto-2
+A tabela "empresa_parceira" armazena informações sobre as empresas parceiras da empresa principal. Ela possui os seguintes atributos: "id" (identificador único da empresa parceira), "nome" (nome da empresa parceira), "email" (endereço de e-mail da empresa parceira), "telefone" (número de telefone da empresa parceira) e "endereco" (endereço da empresa parceira).
+
+A tabela "tecnologia_usada" armazena informações sobre as tecnologias usadas pela empresa principal. Ela possui os seguintes atributos: "id" (identificador único da tecnologia usada), "nome" (nome da tecnologia), "descricao" (breve descrição da tecnologia), "area" (área de aplicação da tecnologia) e "data_atualizacao" (data da última atualização da tecnologia).
+
+A tabela "relatorio" armazena um histórico das tecnologias usadas pela empresa principal e suas parceiras em datas específicas. Ela possui os seguintes atributos: "id" (identificador único do relatório), "id_empresa" (identificador único da empresa parceira), "id_tecnologia" (identificador único da tecnologia usada), "data" (data em que a tecnologia foi usada).
+
+A relação entre as tabelas "empresa_parceira" e "tecnologia_usada" é de muitos para muitos, pois uma empresa parceira pode utilizar várias tecnologias e uma tecnologia pode ser usada por várias empresas parceiras. A tabela "relatorio" serve como uma tabela associativa, permitindo que as informações sobre as tecnologias usadas por cada empresa parceira em datas específicas sejam armazenadas e consultadas posteriormente.
